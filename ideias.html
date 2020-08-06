@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Ideias | Casa Criativa</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap" rel="stylesheet">
+  <link href="visual.css" rel="stylesheet">
+</head>
+<body id="page-ideas">
+
+  <div id="container">
+    <header>
+      <a href="index.html">
+          <img  class ="logo" src="img/logo.png" alt="logo" title="logotipo">
+      </a>
+      <nav>
+          <li><a href="index.html">Início</a></li>
+          <li><a class="button" href="#" onclick="onOFF()">Nova Ideia</a></li>
+      </nav>
+    </header>
+    <section id="title">
+      <p>em exibição</p>
+      <h1>Ideias</h1>
+    </section>
+    <main>
+      <section id="ideas">
+        <div class="idea">
+            <img 
+            src="img/ferramenta.png"
+            alt="imagem de Curso de pROGRAMAÇÃO">
+        
+            <div class="content">
+              <h3 align="justify">Cursos de programação</h3>
+              <p align="justify">Estudo</p>
+              <div class="description" align="justify">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio odit
+              </div>
+              <a href="a" align="justify"> ir para a Ideia</a>
+            </div>
+        </div>
+
+        <div class="idea">
+          <img 
+          src="img/robot.png"
+          alt="imagem de robótica">
+      
+          <div class="content">
+            <h3 align="justify">Robótica</h3>
+            <p align="justify">Estudo</p>
+            <div class="description" align="justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio odit 
+            </div>
+            <a href="a"> ir para a Ideia</a>
+          </div>
+        </div>
+
+        <div class="idea">
+        <img 
+        src="img/monitor.png"
+        alt="imagem de Exercicios">
+    
+        <div class="content">
+          <h3 align="justify">Exercicios</h3>
+          <p align="justify"> Estudo</p>
+          <div class="description" align="justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio odit ipsam repudiandae facere harum sapiente porro nostrum dolor.
+          </div>
+          <a href="#" align="justify"> ir para a Ideia</a>
+        </div>
+        </div>
+
+        <div class="idea">
+          <img 
+          src="img/nodes.png"
+          alt="imagem de Nodes">
+      
+          <div class="content">
+            <h3 align="justify">Nodes</h3>
+            <p align="justify">Estudo</p>
+            <div class="description" align="justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio odit
+            </div>
+            <a href="a" align="justify"> ir para a Ideia</a>
+          </div>
+      </div>
+    </section>
+    </main>
+    <footer>
+      com 💙<a href="https://rocketseat.com.br/" target="_blank">Rocketseat </a>
+    </footer>
+  </div>
+
+      <!--modal-->
+    <div id="modal" class="hide">
+      <div class="content">
+        <h1>Nova Ideia</h1>
+
+        <form action="">
+
+          <div id="input-wrapper">
+            <label for="title">Título da ideia</label>
+            <input type="text" name="title">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="category">Categoria</label>
+            <input type="text" name="category">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="image">Link da Imagem</label>
+            <input type="url" name="image">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="description">Digite uma descrição para essa ideia</label>
+            <textarea name="description"  cols="30" rows="10" ></textarea>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="link">Link da ideia</label>
+            <input type="url" name="image">
+          </div>
+          <a href="#" onclick="onOFF()">Voltar</a>
+          <button>salvar</button>
+
+        </form>
+
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
