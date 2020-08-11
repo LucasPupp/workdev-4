@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<section id="intro">
+           
+  <header>
+    <a href="/">
+        <img  class ="logo" src="img/logo.png" alt="logo" title="logotipo">
+    </a>
+  </header>
+
+  <main>
+  <p align="justify">Ficar em casa em periodos, não deve ser nada fácil</p>
+  <p align="justify">Por isso, iremos catalogar ideias, bricadeiras, jogos, filmes, livros,cursos, dicas</p>
+  <p align="justify">Comece cicando em ver ideias para ver ideias cadastradas</p>
+  </main>
+
+  <section id="buttons">
+<button onclick="onOFF()">+ adicionar tela</button>
+<a href="/ideias" class="button">ver ideias</a>
+
+  </section>
+
+  <footer>
+  com 💙<a href="https://rocketseat.com.br/"  target="_blank">Rocketseat </a>
+  </footer>
+
+  </section>
+
+  <section id="last-ideias">
+    {% include "all_ideas.html" %}
+  </section>
+
+{% endblock %}

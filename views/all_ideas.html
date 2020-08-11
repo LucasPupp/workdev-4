@@ -1,0 +1,14 @@
+{% for idea in ideas %}
+            <div class="idea">
+              <img 
+              src="{{idea.img}}" alt="imagem de {{idea.title}}">
+              <div class="content">
+                <h3 align="justify">{{idea.title}}</h3>
+                <p align="justify">{{idea.category}}</p>
+                <div class="description" align="justify">
+                  {{idea.description}}
+                </div>
+                <a href="{{idea.url}}" target="_blank" align="justify"> ir para a Ideia</a>
+              </div>
+            </div>
+{% endfor %}
